@@ -1,0 +1,3839 @@
+{
+    "Title": "Example Project",
+    "Version": "1.5.1.0",
+    "Author": "Urban Brain Studios, Inc.",
+    "Description": "",
+    "UserScript": "",
+    "Assets": {
+      "Actors": [
+        {
+          "Fields": {
+            "Name": "Karen",
+            "Pictures": "[ActorImages\\Karen.jpg;ActorImages\\KarenMad.jpg]",
+            "Description": "",
+            "IsPlayer": "True",
+            "Age": "30",
+            "Gender": "Female"
+          },
+          "ID": 1
+        },
+        {
+          "Fields": {
+            "Name": "Tommy",
+            "Pictures": "[ActorImages\\Tommy.jpg]",
+            "Description": "Ex-husband of Karen's sister.",
+            "IsPlayer": "False",
+            "Age": "27",
+            "Gender": "Male"
+          },
+          "ID": 2
+        },
+        {
+          "Fields": {
+            "Name": "Katie",
+            "Pictures": "[ActorImages\\Katie.jpg]",
+            "Description": "Karen's sister.",
+            "IsPlayer": "False",
+            "Age": "25",
+            "Gender": "Female"
+          },
+          "ID": 3
+        },
+        {
+          "Fields": {
+            "Name": "Receptionist",
+            "Pictures": "[ActorImages\\Receptionist.jpg]",
+            "Description": "She works in the lobby of Tommy's building.",
+            "IsPlayer": "False",
+            "Age": "47",
+            "Gender": ""
+          },
+          "ID": 4
+        },
+        {
+          "Fields": {
+            "Name": "Computer",
+            "Pictures": "[ActorImages\\computer.jpg]",
+            "Description": "The sheriff's computer system.",
+            "IsPlayer": "False",
+            "Age": "",
+            "Gender": ""
+          },
+          "ID": 5
+        },
+        {
+          "Fields": {
+            "Name": "Venetti",
+            "Pictures": "[ActorImages\\Venetti.jpg]",
+            "Description": "",
+            "IsPlayer": "False",
+            "Age": "",
+            "Gender": ""
+          },
+          "ID": 6
+        }
+      ],
+      "Items": [
+        {
+          "Fields": {
+            "Name": "USB Memory Stick",
+            "Pictures": "[]",
+            "Description": "",
+            "Purpose": "",
+            "Scene": "",
+            "In Inventory": "True"
+          },
+          "ID": 1
+        }
+      ],
+      "Locations": [
+        {
+          "Fields": {
+            "Name": "888 Brannen Street",
+            "Pictures": "[]",
+            "Description": "Tommy's Office Building",
+            "Purpose": "",
+            "Scene": "",
+            "Learned": "False",
+            "Visited": "False"
+          },
+          "ID": 1
+        },
+        {
+          "Fields": {
+            "Name": "445 Oakridge",
+            "Pictures": "[]",
+            "Description": "Venetti's Home Address",
+            "Purpose": "",
+            "Scene": "",
+            "Learned": "False",
+            "Visited": "False"
+          },
+          "ID": 2
+        }
+      ],
+      "Conversations": [
+        {
+          "DialogNodes": [
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 1,
+                  "DestinationConvoID": 1,
+                  "OriginDialogID": 0,
+                  "DestinationDialogID": 1
+                }
+              ],
+              "ConversationID": 1,
+              "IsRoot": true,
+              "IsGroup": false,
+              "ConditionsString": "Dialog[3].SimStatus ~= \"WasDisplayed\"",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "START",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "2"
+              },
+              "ID": 0
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 1,
+                  "DestinationConvoID": 1,
+                  "OriginDialogID": 1,
+                  "DestinationDialogID": 2
+                }
+              ],
+              "ConversationID": 1,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "Dialog[1].SimStatus ~= \"WasDisplayed\"",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 1,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "No Sister",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "1",
+                "Menu Text": "",
+                "Dialogue Text": "I can't believe Katie didn't show up to my 30th.|She was so excited about it.|It's just not like her to flake on me.",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\01\\01_01.mp3;AudioFiles\\01\\01_02.mp3;AudioFiles\\01\\01_03.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "No puedo creer que Katie no se presentase a mi trigésimo cumpleaños.|Estaba tan emocionada al respecto.|Ella nunca me dejaría tirada.",
+                "fr-FR": "Je ne peux pas croire que Katie ne s'est pas présentée à mon 30ème anniversaire.|Elle était tellement excitée à ce sujet.|Cela ne lui ressemble pas."
+              },
+              "ID": 1
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 1,
+                  "DestinationConvoID": 1,
+                  "OriginDialogID": 2,
+                  "DestinationDialogID": 3
+                },
+                {
+                  "Filename": null,
+                  "OriginConvoID": 1,
+                  "DestinationConvoID": 1,
+                  "OriginDialogID": 2,
+                  "DestinationDialogID": 4
+                },
+                {
+                  "Filename": null,
+                  "OriginConvoID": 1,
+                  "DestinationConvoID": 1,
+                  "OriginDialogID": 2,
+                  "DestinationDialogID": 6
+                },
+                {
+                  "Filename": null,
+                  "OriginConvoID": 1,
+                  "DestinationConvoID": 1,
+                  "OriginDialogID": 2,
+                  "DestinationDialogID": 5
+                }
+              ],
+              "ConversationID": 1,
+              "IsRoot": false,
+              "IsGroup": true,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 6,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Action Desicion 1",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "1"
+              },
+              "ID": 2
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 1,
+                  "DestinationConvoID": 1,
+                  "OriginDialogID": 3,
+                  "DestinationDialogID": 10
+                }
+              ],
+              "ConversationID": 1,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "Dialog[3].SimStatus ~= \"WasDisplayed\"",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "I have your sister.",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "1",
+                "Menu Text": "[a][f]Check Voicemail",
+                "Dialogue Text": "",
+                "Parenthetical": "",
+                "Audio Files": "[]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "",
+                "fr-FR": ""
+              },
+              "ID": 3
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 1,
+                  "DestinationConvoID": 1,
+                  "OriginDialogID": 4,
+                  "DestinationDialogID": 11
+                }
+              ],
+              "ConversationID": 1,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "Dialog[4].SimStatus ~= \"WasDisplayed\"",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "I'm not here...",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "1",
+                "Menu Text": "[a][f]Call Katie",
+                "Dialogue Text": "",
+                "Parenthetical": "",
+                "Audio Files": "[]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "",
+                "fr-FR": ""
+              },
+              "ID": 4
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 1,
+                  "DestinationConvoID": 1,
+                  "OriginDialogID": 6,
+                  "DestinationDialogID": 2
+                }
+              ],
+              "ConversationID": 1,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "Dialog[6].SimStatus ~= \"WasDisplayed\"\r\nand Dialog[3].SimStatus == \"WasDisplayed\"",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Call Police",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "1",
+                "Menu Text": "[a]Call Police",
+                "Dialogue Text": "Maybe I should just do what he says. | I don't want to risk it.",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\01\\06_01.mp3;AudioFiles\\01\\06_02.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "Tal vez debería hacer lo que dice. | No quiero correr riesgos.",
+                "fr-FR": "Peut-être que je devrais juste faire ce qu'il dit. | Je ne veux pas prendre de risques."
+              },
+              "ID": 6
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 1,
+                  "DestinationConvoID": 1,
+                  "OriginDialogID": 7,
+                  "DestinationDialogID": 2
+                }
+              ],
+              "ConversationID": 1,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Leave A",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "1",
+                "Menu Text": "[a][f]Leave",
+                "Dialogue Text": "I don't even know where she would be.",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\01\\07_01.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "No sé ni dónde podría estar.",
+                "fr-FR": "Je ne sais même pas où elle serait."
+              },
+              "ID": 7
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 1,
+                  "DestinationConvoID": 1,
+                  "OriginDialogID": 5,
+                  "DestinationDialogID": 7
+                },
+                {
+                  "Filename": null,
+                  "OriginConvoID": 1,
+                  "DestinationConvoID": 1,
+                  "OriginDialogID": 5,
+                  "DestinationDialogID": 8
+                }
+              ],
+              "ConversationID": 1,
+              "IsRoot": false,
+              "IsGroup": true,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 4,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Leave Options",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "1"
+              },
+              "ID": 5
+            },
+            {
+              "OutgoingLinks": [],
+              "ConversationID": 1,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "Location[\"888_Brannen_Street\"].Learned == true",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 2,
+              "Fields": {
+                "Title": "Leave B",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "1",
+                "Menu Text": "[a][f]Leave",
+                "Dialogue Text": "",
+                "Parenthetical": "",
+                "Audio Files": "[]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "",
+                "fr-FR": ""
+              },
+              "ID": 8
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 1,
+                  "DestinationConvoID": 1,
+                  "OriginDialogID": 9,
+                  "DestinationDialogID": 2
+                }
+              ],
+              "ConversationID": 1,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "",
+              "UserScript": "Location[\"888_Brannen_Street\"].Learned = true",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Hey Karen, it's Tomm...",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "2",
+                "Conversant": "1",
+                "Menu Text": "",
+                "Dialogue Text": "Hey Karen, it's Tommy, your former brother-in-law. | Katie here wishes you a happy birthday too... | I'd pass the phone to her but she's a little... | tied up at the moment. | If you ever want to see her again you'll do exactly as I say. | Meet me tonight at [em1]888 Brannen Street[/em1]. | And don't try anything unless you want to become an only child. | See ya soon, kiddo. | *Click*",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\01\\09_01.mp3;AudioFiles\\01\\09_02.mp3;AudioFiles\\01\\09_03.mp3;AudioFiles\\01\\09_04.mp3;AudioFiles\\01\\09_05.mp3;AudioFiles\\01\\09_06.mp3;AudioFiles\\01\\09_07.mp3;AudioFiles\\01\\09_08.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "Hola Karen. Soy Tommy, tu ex cuñado. | Katie te desea un feliz cumpleaños también... | Le pasaría el teléfono, pero está un poco... | atada en este momento. | Si alguna vez quieres volver a verla, vas a hacer exactamente lo que te diga. | Nos vemos esta noche en [em1]888 Brannen Street[/em1]. | Y no intentes hacer nada a menos que quieras convertirte en hija única. | Nos vemos pronto, nena. | *Clic*",
+                "fr-FR": "Hé Karen, c'est Tommy, votre ex-beau-frère. | Katie ici vous souhaite un joyeux anniversaire aussi... | Je lui passe le téléphone, mais elle est un peu... | ligotée pour le moment. | Si jamais vous voulez la revoir, faites exactement ce que je dis. | Rendez-vous ce soir au [em1]888, rue Brannen[/em1]. | Et ne tentez rien, sauf si vous voulez devenir enfant unique. | À bientôt, mon petit. | * Claquement *"
+              },
+              "ID": 9
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 1,
+                  "DestinationConvoID": 1,
+                  "OriginDialogID": 10,
+                  "DestinationDialogID": 9
+                }
+              ],
+              "ConversationID": 1,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Happy birthday to yo...",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "2",
+                "Conversant": "1",
+                "Menu Text": "",
+                "Dialogue Text": "Happy birthday to you...",
+                "Parenthetical": "Singing",
+                "Audio Files": "[AudioFiles\\01\\10_01.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "Feliz cumpleaños…",
+                "fr-FR": "Joyeux anniversaire…"
+              },
+              "ID": 10
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 1,
+                  "DestinationConvoID": 1,
+                  "OriginDialogID": 11,
+                  "DestinationDialogID": 2
+                }
+              ],
+              "ConversationID": 1,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Hi this is Katie.",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "3",
+                "Conversant": "1",
+                "Menu Text": "",
+                "Dialogue Text": "Hi this is Katie. I'm not here right now, but if you leave you name number, and message I'll get back to you as soon as I can! *Beep*",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\01\\11_01.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "Hola, soy Katie. No estoy aquí ahora mismo pero, si dejas un mensaje con tu nombre y número, me pondré en contacto contigo tan pronto como me sea posible. *Bip*",
+                "fr-FR": "Salut c'est Katie. Je ne suis pas ici en ce moment, mais si vous me laissez vos nom, numéro et message, je vous rappellerai dès que possible ! * Bip *"
+              },
+              "ID": 11
+            }
+          ],
+          "NodeColor": 0,
+          "Fields": {
+            "Title": "Karen's House",
+            "Pictures": "[]",
+            "Description": "The demonstrations start at Karen's house where she finds out what happened to her little sister. The main goal of this conversation to learn the address of Tommy's work.",
+            "Actor": "1",
+            "Conversant": "2",
+            "Scene": "1A"
+          },
+          "ID": 1
+        },
+        {
+          "DialogNodes": [
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 2,
+                  "DestinationConvoID": 2,
+                  "OriginDialogID": 0,
+                  "DestinationDialogID": 1
+                },
+                {
+                  "Filename": null,
+                  "OriginConvoID": 2,
+                  "DestinationConvoID": 2,
+                  "OriginDialogID": 0,
+                  "DestinationDialogID": 6
+                },
+                {
+                  "Filename": null,
+                  "OriginConvoID": 2,
+                  "DestinationConvoID": 2,
+                  "OriginDialogID": 0,
+                  "DestinationDialogID": 7
+                }
+              ],
+              "ConversationID": 2,
+              "IsRoot": true,
+              "IsGroup": false,
+              "ConditionsString": "Location[\"888_Brannen_Street\"].Learned == true\r\nand Dialog[5].SimStatus ~= \"WasDisplayed\"",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "START",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "4"
+              },
+              "ID": 0
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 2,
+                  "DestinationConvoID": 2,
+                  "OriginDialogID": 1,
+                  "DestinationDialogID": 2
+                }
+              ],
+              "ConversationID": 2,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Hello may I help you...",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "4",
+                "Conversant": "1",
+                "Menu Text": "",
+                "Dialogue Text": "Hello, may I help you?",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\02\\01_01.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "Hola, ¿en qué puedo ayudarte?",
+                "fr-FR": "Bonjour, puis-je vous aider ?"
+              },
+              "ID": 1
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 2,
+                  "DestinationConvoID": 2,
+                  "OriginDialogID": 2,
+                  "DestinationDialogID": 3
+                }
+              ],
+              "ConversationID": 2,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Yes, I'm here to see...",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "4",
+                "Menu Text": "",
+                "Dialogue Text": "Hi, I'm here to see Tommy Wong.",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\02\\02_01.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "Hola, estoy aquí para ver a Tommy Wong.",
+                "fr-FR": "Salut, je suis ici pour voir Tommy Wong."
+              },
+              "ID": 2
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 2,
+                  "DestinationConvoID": 2,
+                  "OriginDialogID": 3,
+                  "DestinationDialogID": 4
+                }
+              ],
+              "ConversationID": 2,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Who are you?",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "4",
+                "Conversant": "1",
+                "Menu Text": "",
+                "Dialogue Text": "May I ask who you are?",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\02\\03_01.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "¿Puedo preguntarte quién eres?",
+                "fr-FR": "Puis-je demander qui vous êtes ?"
+              },
+              "ID": 3
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 2,
+                  "DestinationConvoID": 2,
+                  "OriginDialogID": 4,
+                  "DestinationDialogID": 5
+                }
+              ],
+              "ConversationID": 2,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "I'm Karen and I'm he...",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "4",
+                "Menu Text": "",
+                "Dialogue Text": "I'm Karen. I'm here for my sister.",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\02\\04_01.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "Soy Karen. Estoy aquí por mi hermana.",
+                "fr-FR": "Je suis Karen. Je suis ici pour ma sœur."
+              },
+              "ID": 4
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 2,
+                  "DestinationConvoID": 3,
+                  "OriginDialogID": 5,
+                  "DestinationDialogID": 0
+                }
+              ],
+              "ConversationID": 2,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "",
+              "UserScript": "SetStatus(Actor[\"Karen\"], Actor[\"Receptionist\"], \"spoke to\")\r\nLocation[\"888_Brannen_Street\"].Visited = true",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Right this way...",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "4",
+                "Conversant": "1",
+                "Menu Text": "",
+                "Dialogue Text": "Right this way...",
+                "Parenthetical": "Hesitating",
+                "Audio Files": "[AudioFiles\\02\\05_01.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "Por aquí…",
+                "fr-FR": "Par ici…"
+              },
+              "ID": 5
+            },
+            {
+              "OutgoingLinks": [],
+              "ConversationID": 2,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "Dialog[5].SimStatus == \"WasDisplayed\"",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 2,
+              "Fields": {
+                "Title": "Tommy is waiting to ...",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "4",
+                "Conversant": "1",
+                "Menu Text": "",
+                "Dialogue Text": "Mr. Wong is waiting to see you in his office...",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\02\\06_01.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "Mr. Wong está esperándote en su oficina…",
+                "fr-FR": "M. Wong vous attend dans son bureau…"
+              },
+              "ID": 6
+            },
+            {
+              "OutgoingLinks": [],
+              "ConversationID": 2,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "Location[\"888_Brannen_Street\"].Learned == false",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 1,
+              "Fields": {
+                "Title": "Hmm... I'm not sure ...",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "1",
+                "Menu Text": "",
+                "Dialogue Text": "The creepiest guys are always going in and out of that building.",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\02\\07_01.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "Siempre están entrando y saliendo tipos rarísimos de ese edificio.",
+                "fr-FR": "Les gars les plus terrifiants entrent et sortent toujours de ce bâtiment."
+              },
+              "ID": 7
+            }
+          ],
+          "NodeColor": 0,
+          "Fields": {
+            "Title": "888 Brannen - Lobby",
+            "Pictures": "[]",
+            "Description": "The is the address where Tommy works but Karen needs to request to see him by talking to the receptionist.",
+            "Actor": "1",
+            "Conversant": "4",
+            "Scene": "2A"
+          },
+          "ID": 2
+        },
+        {
+          "DialogNodes": [
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 3,
+                  "DestinationConvoID": 3,
+                  "OriginDialogID": 0,
+                  "DestinationDialogID": 1
+                },
+                {
+                  "Filename": null,
+                  "OriginConvoID": 3,
+                  "DestinationConvoID": 3,
+                  "OriginDialogID": 0,
+                  "DestinationDialogID": 35
+                },
+                {
+                  "Filename": null,
+                  "OriginConvoID": 3,
+                  "DestinationConvoID": 3,
+                  "OriginDialogID": 0,
+                  "DestinationDialogID": 33
+                }
+              ],
+              "ConversationID": 3,
+              "IsRoot": true,
+              "IsGroup": false,
+              "ConditionsString": "GetStatus(Actor[\"Karen\"], Actor[\"Receptionist\"]) == \"spoke to\"\r\nand Location[\"888_Brannen_Street\"].Visited == true",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "START",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "2"
+              },
+              "ID": 0
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 3,
+                  "DestinationConvoID": 3,
+                  "OriginDialogID": 1,
+                  "DestinationDialogID": 2
+                },
+                {
+                  "Filename": null,
+                  "OriginConvoID": 3,
+                  "DestinationConvoID": 3,
+                  "OriginDialogID": 1,
+                  "DestinationDialogID": 3
+                }
+              ],
+              "ConversationID": 3,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Karen! Sweet heart!",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "2",
+                "Conversant": "1",
+                "Menu Text": "",
+                "Dialogue Text": "Karen! Sweetheart!",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\03\\01_01.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "¡Karen! ¡Cariño!",
+                "fr-FR": "Karen ! Ma chérie !"
+              },
+              "ID": 1
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 3,
+                  "DestinationConvoID": 3,
+                  "OriginDialogID": 2,
+                  "DestinationDialogID": 4
+                }
+              ],
+              "ConversationID": 3,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Cut the crap!",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "2",
+                "Menu Text": "Strong Response",
+                "Dialogue Text": "Cut the crap! [pica=2]You know why I'm here.",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\03\\02_01.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "¡Corta el rollo! [pica=2]¿Sabes por qué estoy aquí?",
+                "fr-FR": "Arrêtez vos conneries ! [pica = 2] Vous savez pourquoi je suis ici."
+              },
+              "ID": 2
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 3,
+                  "DestinationConvoID": 3,
+                  "OriginDialogID": 3,
+                  "DestinationDialogID": 5
+                }
+              ],
+              "ConversationID": 3,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Where is my sister?",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "2",
+                "Menu Text": "Weak Response",
+                "Dialogue Text": "Where is my sister? Is she okay?",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\03\\03_01.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "¿Dónde está mi hermana? ¿Está bien?",
+                "fr-FR": "Où est ma sœur ? Est-ce qu'elle va bien ?"
+              },
+              "ID": 3
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 3,
+                  "DestinationConvoID": 3,
+                  "OriginDialogID": 4,
+                  "DestinationDialogID": 6
+                }
+              ],
+              "ConversationID": 3,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "",
+              "UserScript": "SetRelationship(Actor[\"Tommy\"], Actor[\"Karen\"], \"anger\", 1)",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Watch your mouth!",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "2",
+                "Conversant": "1",
+                "Menu Text": "",
+                "Dialogue Text": "You better watch that mouth of yours. | If you talk to me like that one more time, both you and your sister will be dead before tomorrow. | [em4]Two heavy-set men emerge from behind.[/em4]",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\03\\04_01.mp3;AudioFiles\\03\\04_02.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "Será mejor que midas tus palabras. | Si me hablas así una vez más, tanto tú como tu hermana estaréis muertas antes de que acabe el día. | [em4]Dos hombres corpulentos aparecen por detrás.[/em4]",
+                "fr-FR": "Vous feriez mieux de surveiller votre langage. | Si vous me parlez comme ça une fois de plus, vous et votre sœur serez mortes avant demain. | [em4]Deux costauds sortent de derrière.[/em4]"
+              },
+              "ID": 4
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 3,
+                  "DestinationConvoID": 3,
+                  "OriginDialogID": 5,
+                  "DestinationDialogID": 6
+                }
+              ],
+              "ConversationID": 3,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Relax, she's fine.",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "2",
+                "Conversant": "1",
+                "Menu Text": "",
+                "Dialogue Text": "Relax, she's fine.",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\03\\05_01.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "Cálmate. Está bien.",
+                "fr-FR": "Détendez-vous, elle va bien."
+              },
+              "ID": 5
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 3,
+                  "DestinationConvoID": 3,
+                  "OriginDialogID": 6,
+                  "DestinationDialogID": 7
+                }
+              ],
+              "ConversationID": 3,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "What do you want fro...",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "2",
+                "Menu Text": "",
+                "Dialogue Text": "What do you want from me?",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\03\\06_01.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "¿Qué quieres de mí?",
+                "fr-FR": "Que voulez-vous de moi ?"
+              },
+              "ID": 6
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 3,
+                  "DestinationConvoID": 3,
+                  "OriginDialogID": 7,
+                  "DestinationDialogID": 8
+                }
+              ],
+              "ConversationID": 3,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Three Things",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "2",
+                "Conversant": "1",
+                "Menu Text": "",
+                "Dialogue Text": "I need you to swing by Vinetti's and get a couple things. | It shouldn't be too hard for a girl like you.",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\03\\07_01.mp3;AudioFiles\\03\\07_02.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "Necesito que des una vuelta por casa de Vinetti y consigas un par de cosas. | No debería ser demasiado difícil para una chica como tú.",
+                "fr-FR": "J'ai besoin de vous pour influencer Vinetti et obtenir deux, trois choses. | Cela ne devrait pas être trop dur pour une fille comme vous."
+              },
+              "ID": 7
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 3,
+                  "DestinationConvoID": 3,
+                  "OriginDialogID": 8,
+                  "DestinationDialogID": 15
+                },
+                {
+                  "Filename": null,
+                  "OriginConvoID": 3,
+                  "DestinationConvoID": 3,
+                  "OriginDialogID": 8,
+                  "DestinationDialogID": 27
+                },
+                {
+                  "Filename": null,
+                  "OriginConvoID": 3,
+                  "DestinationConvoID": 3,
+                  "OriginDialogID": 8,
+                  "DestinationDialogID": 11
+                },
+                {
+                  "Filename": null,
+                  "OriginConvoID": 3,
+                  "DestinationConvoID": 3,
+                  "OriginDialogID": 8,
+                  "DestinationDialogID": 31
+                }
+              ],
+              "ConversationID": 3,
+              "IsRoot": false,
+              "IsGroup": true,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 3,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Missions",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "2",
+                "Conversant": "1"
+              },
+              "ID": 8
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 3,
+                  "DestinationConvoID": 3,
+                  "OriginDialogID": 9,
+                  "DestinationDialogID": 12
+                }
+              ],
+              "ConversationID": 3,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 1,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Why Vinetti?",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "2",
+                "Menu Text": "Why Vinetti?",
+                "Dialogue Text": "Officer Vinetti? What do you want from him?",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\03\\09_01.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "¿El oficial Vinetti? ¿Qué quieres de él?",
+                "fr-FR": "Officier Vinetti ? Que voulez-vous de lui ?"
+              },
+              "ID": 9
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 3,
+                  "DestinationConvoID": 3,
+                  "OriginDialogID": 10,
+                  "DestinationDialogID": 20
+                }
+              ],
+              "ConversationID": 3,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "Dialog[10].SimStatus ~= \"WasDisplayed\"",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Where",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "2",
+                "Menu Text": "Where's Venetti?",
+                "Dialogue Text": "Where do I find him?",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\03\\10_01.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "¿Dónde puedo encontrarlo?",
+                "fr-FR": "Où puis-je le trouver ?"
+              },
+              "ID": 10
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 3,
+                  "DestinationConvoID": 3,
+                  "OriginDialogID": 11,
+                  "DestinationDialogID": 36
+                }
+              ],
+              "ConversationID": 3,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "Dialog[11].SimStatus ~= \"WasDisplayed\"",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "More about 3",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "2",
+                "Menu Text": "A girl like me?",
+                "Dialogue Text": "What do you mean by a girl like me?",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\03\\11_01.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "¿Qué quieres decir con una chica como yo?",
+                "fr-FR": "Qu'entendez-vous par une fille comme moi ?"
+              },
+              "ID": 11
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 3,
+                  "DestinationConvoID": 3,
+                  "OriginDialogID": 12,
+                  "DestinationDialogID": 8
+                }
+              ],
+              "ConversationID": 3,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Here's Why",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "2",
+                "Conversant": "1",
+                "Menu Text": "",
+                "Dialogue Text": "Not that it's any of your business, but I don't like my employees providing information to the competition.",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\03\\12_01.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "No es que sea asunto tuyo, pero no me gusta que mis empleados pasen información a la competencia.",
+                "fr-FR": "Ce ne sont pas vos affaires, mais je n'aime pas que mes employés fournissent des informations à la concurrence."
+              },
+              "ID": 12
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 3,
+                  "DestinationConvoID": 3,
+                  "OriginDialogID": 13,
+                  "DestinationDialogID": 14
+                }
+              ],
+              "ConversationID": 3,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "More About Why",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "2",
+                "Menu Text": "Competition?",
+                "Dialogue Text": "Something tells me it's not really furniture that your import-export deals with.",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\03\\13_01.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "Algo me dice que en realidad no son exactamente muebles lo que exportas e importas.",
+                "fr-FR": "Quelque chose me dit que ce ne sont pas vraiment des meubles dont votre affaire d'import-export s'occupe."
+              },
+              "ID": 13
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 3,
+                  "DestinationConvoID": 3,
+                  "OriginDialogID": 14,
+                  "DestinationDialogID": 8
+                }
+              ],
+              "ConversationID": 3,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Here's even more abo...",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "2",
+                "Conversant": "1",
+                "Menu Text": "",
+                "Dialogue Text": "I like to consider myself a versitile businessman. | But let's be honest. Everyone knows who my family is and where they get their money from so don't play stupid.",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\03\\14_01.mp3;AudioFiles\\03\\14_02.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "Me gusta considerarme un hombre de negocios versátil. | Pero, seamos honestos: todo el mundo sabe quién es mi familia y de dónde saca el dinero, así que no te hagas la tonta.",
+                "fr-FR": "J'aime me considérer comme un homme d'affaires polyvalent. | Mais soyons honnêtes. Tout le monde sait qui est ma famille et d'où ils obtiennent leur argent, alors ne soyez pas stupide."
+              },
+              "ID": 14
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 3,
+                  "DestinationConvoID": 3,
+                  "OriginDialogID": 15,
+                  "DestinationDialogID": 9
+                },
+                {
+                  "Filename": null,
+                  "OriginConvoID": 3,
+                  "DestinationConvoID": 3,
+                  "OriginDialogID": 15,
+                  "DestinationDialogID": 16
+                }
+              ],
+              "ConversationID": 3,
+              "IsRoot": false,
+              "IsGroup": true,
+              "ConditionsString": "Dialog[19].SimStatus ~= \"WasDisplayed\"",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "About 1 - A",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "2"
+              },
+              "ID": 15
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 3,
+                  "DestinationConvoID": 3,
+                  "OriginDialogID": 16,
+                  "DestinationDialogID": 13
+                },
+                {
+                  "Filename": null,
+                  "OriginConvoID": 3,
+                  "DestinationConvoID": 3,
+                  "OriginDialogID": 16,
+                  "DestinationDialogID": 17
+                }
+              ],
+              "ConversationID": 3,
+              "IsRoot": false,
+              "IsGroup": true,
+              "ConditionsString": "Dialog[12].SimStatus == \"WasDisplayed\"",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 2,
+              "Fields": {
+                "Title": "About 1 - B",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "2"
+              },
+              "ID": 16
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 3,
+                  "DestinationConvoID": 3,
+                  "OriginDialogID": 17,
+                  "DestinationDialogID": 18
+                }
+              ],
+              "ConversationID": 3,
+              "IsRoot": false,
+              "IsGroup": true,
+              "ConditionsString": "Dialog[14].SimStatus == \"WasDisplayed\"",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 2,
+              "Fields": {
+                "Title": "About 1 - C",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "2"
+              },
+              "ID": 17
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 3,
+                  "DestinationConvoID": 3,
+                  "OriginDialogID": 18,
+                  "DestinationDialogID": 19
+                }
+              ],
+              "ConversationID": 3,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Even More About Why",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "2",
+                "Menu Text": "Drugs",
+                "Dialogue Text": "I honestly thought they were all just rumors.",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\03\\18_01.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "Sinceramente, pensaba que eran sólo rumores.",
+                "fr-FR": "Honnêtement, je pensais que ce n'étaient que des rumeurs."
+              },
+              "ID": 18
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 3,
+                  "DestinationConvoID": 3,
+                  "OriginDialogID": 19,
+                  "DestinationDialogID": 8
+                }
+              ],
+              "ConversationID": 3,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Reminder",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "2",
+                "Conversant": "1",
+                "Menu Text": "",
+                "Dialogue Text": "Enough about me.",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\03\\19_01.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "Basta de hablar de mí.",
+                "fr-FR": "Assez parlé de moi."
+              },
+              "ID": 19
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 3,
+                  "DestinationConvoID": 3,
+                  "OriginDialogID": 20,
+                  "DestinationDialogID": 21
+                }
+              ],
+              "ConversationID": 3,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "",
+              "UserScript": "Location[\"445_Oakridge\"].Learned = true",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "More about 2",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "2",
+                "Conversant": "1",
+                "Menu Text": "",
+                "Dialogue Text": "[em1]445 Oakridge[/em1]. It's near the station. | I need you to log in to his computer and find any information you can related to any other Organizations.",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\03\\20_01.mp3;AudioFiles\\03\\20_02.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "[em1]445 Oak Ridge[/em1]. Está cerca de la estación. | Necesito que inicies sesión en su ordenador y encuentres información que pueda estar relacionada con cualquier otra organización.",
+                "fr-FR": "[em1]445 Oakridge[/em1]. C'est près de la gare. | J'ai besoin de vous pour vous connecter à son ordinateur et trouver toute information liée à d'autres organisations."
+              },
+              "ID": 20
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 3,
+                  "DestinationConvoID": 3,
+                  "OriginDialogID": 21,
+                  "DestinationDialogID": 22
+                },
+                {
+                  "Filename": null,
+                  "OriginConvoID": 3,
+                  "DestinationConvoID": 3,
+                  "OriginDialogID": 21,
+                  "DestinationDialogID": 24
+                },
+                {
+                  "Filename": null,
+                  "OriginConvoID": 3,
+                  "DestinationConvoID": 3,
+                  "OriginDialogID": 21,
+                  "DestinationDialogID": 26
+                }
+              ],
+              "ConversationID": 3,
+              "IsRoot": false,
+              "IsGroup": true,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 7,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "About 2 - B",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "2",
+                "Conversant": "1"
+              },
+              "ID": 21
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 3,
+                  "DestinationConvoID": 3,
+                  "OriginDialogID": 22,
+                  "DestinationDialogID": 23
+                }
+              ],
+              "ConversationID": 3,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "Dialog[22].SimStatus ~= \"WasDisplayed\"",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Question 2A",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "2",
+                "Menu Text": "How?",
+                "Dialogue Text": "How am I supposed to get into his computer?",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\03\\22_01.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "¿Cómo voy a entrar en su ordenador?",
+                "fr-FR": "Comment suis-je censée entrer dans son ordinateur ?"
+              },
+              "ID": 22
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 3,
+                  "DestinationConvoID": 3,
+                  "OriginDialogID": 23,
+                  "DestinationDialogID": 21
+                }
+              ],
+              "ConversationID": 3,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Answer 2A",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "2",
+                "Conversant": "1",
+                "Menu Text": "",
+                "Dialogue Text": "You're gonna use that little MIT graduate brain of yours.",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\03\\23_01.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "Vas a usar ese pequeño cerebro graduado en el MIT que tienes.",
+                "fr-FR": "Vous allez utiliser ce petit cerveau diplômé du MIT qu'est le vôtre."
+              },
+              "ID": 23
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 3,
+                  "DestinationConvoID": 3,
+                  "OriginDialogID": 24,
+                  "DestinationDialogID": 25
+                }
+              ],
+              "ConversationID": 3,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "Dialog[24].SimStatus ~= \"WasDisplayed\"",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Question 2B",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "2",
+                "Menu Text": "Organizations?",
+                "Dialogue Text": "What kind of information am I looking for exactly?",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\03\\24_01.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "¿Qué tipo de información estoy buscando exactamente?",
+                "fr-FR": "Quel genre d'information est-ce que je cherche exactement ?"
+              },
+              "ID": 24
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 3,
+                  "DestinationConvoID": 3,
+                  "OriginDialogID": 25,
+                  "DestinationDialogID": 21
+                }
+              ],
+              "ConversationID": 3,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Answer 2B",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "2",
+                "Conversant": "1",
+                "Menu Text": "",
+                "Dialogue Text": "Checks written by any of the local import-export companies, unusual receipts, anything that would seem out of place for a cop.",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\03\\25_01.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "Cheques emitidos por empresas locales de importación y exportación, ingresos inusuales, cualquier cosa que pueda parecer fuera de lugar para un policía.",
+                "fr-FR": "Des chèques émis par l'une des entreprises locales d'import-export, des recettes inhabituelles, tout ce qui semble hors de propos pour un flic."
+              },
+              "ID": 25
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 3,
+                  "DestinationConvoID": 3,
+                  "OriginDialogID": 26,
+                  "DestinationDialogID": 8
+                }
+              ],
+              "ConversationID": 3,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "I have other questio...",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "2",
+                "Menu Text": "Other Questions",
+                "Dialogue Text": "Okay, there are a few more things I need to know...",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\03\\26_01.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "Vale, hay unas cuantas cosas más que necesito saber…",
+                "fr-FR": "Bon, il y a deux, trois choses de plus que j'ai besoin de savoir…"
+              },
+              "ID": 26
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 3,
+                  "DestinationConvoID": 3,
+                  "OriginDialogID": 27,
+                  "DestinationDialogID": 10
+                },
+                {
+                  "Filename": null,
+                  "OriginConvoID": 3,
+                  "DestinationConvoID": 3,
+                  "OriginDialogID": 27,
+                  "DestinationDialogID": 28
+                },
+                {
+                  "Filename": null,
+                  "OriginConvoID": 3,
+                  "DestinationConvoID": 3,
+                  "OriginDialogID": 27,
+                  "DestinationDialogID": 29
+                }
+              ],
+              "ConversationID": 3,
+              "IsRoot": false,
+              "IsGroup": true,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "About 2 - A",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "2"
+              },
+              "ID": 27
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 3,
+                  "DestinationConvoID": 3,
+                  "OriginDialogID": 28,
+                  "DestinationDialogID": 21
+                }
+              ],
+              "ConversationID": 3,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 4,
+              "Fields": {
+                "Title": "I have some more que...",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "2",
+                "Menu Text": "More About 2",
+                "Dialogue Text": "I still need a few more details...",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\03\\28_01.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "Todavía necesito algunos detalles más…",
+                "fr-FR": "J'ai encore besoin d'un peu plus de détails…"
+              },
+              "ID": 28
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 3,
+                  "DestinationConvoID": 3,
+                  "OriginDialogID": 29,
+                  "DestinationDialogID": 30
+                }
+              ],
+              "ConversationID": 3,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "Dialog[23].SimStatus == \"WasDisplayed\"\r\nand Dialog[25].SimStatus == \"WasDisplayed\"",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 2,
+              "Fields": {
+                "Title": "Remind me again abou...",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "2",
+                "Menu Text": "Remind Me",
+                "Dialogue Text": "Okay from the top... What am I supposed to do again?",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\03\\29_01.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "Empecemos de nuevo... ¿Qué se supone que debo hacer?",
+                "fr-FR": "Bon, à partir du haut... Que suis-je censée faire à nouveau ?"
+              },
+              "ID": 29
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 3,
+                  "DestinationConvoID": 3,
+                  "OriginDialogID": 30,
+                  "DestinationDialogID": 8
+                }
+              ],
+              "ConversationID": 3,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Here's the reminder ...",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "2",
+                "Conversant": "1",
+                "Menu Text": "",
+                "Dialogue Text": "I need you to go to [em1]445 Oakridge[/em1] | get into Officer Venetti's PC | and find out everything you can about his relationship to any other organization.",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\03\\30_01.mp3;AudioFiles\\03\\30_02.mp3;AudioFiles\\03\\30_03.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "Necesito que vayas a [em1]445 Oakridge[/em1] | entres en el PC del oficial Vinetti | y averigües todo lo que puedas acerca de su relación con cualquier otra organización.",
+                "fr-FR": "J'ai besoin de vous pour aller au [em1]445 Oakridge[/em1] | entrer dans le PC de l'Officier Vinetti | et découvrir tout ce que vous pouvez au sujet de sa relation avec toute autre organisation."
+              },
+              "ID": 30
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 3,
+                  "DestinationConvoID": 3,
+                  "OriginDialogID": 31,
+                  "DestinationDialogID": 32
+                }
+              ],
+              "ConversationID": 3,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "Dialog[23].SimStatus == \"WasDisplayed\"\r\nand Dialog[25].SimStatus == \"WasDisplayed\"\r\nand Dialog[14].SimStatus == \"WasDisplayed\"",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "OK I'm ready to go.",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "2",
+                "Menu Text": "[a]Leave",
+                "Dialogue Text": "Alright, just promise nothing will happen to Katie.",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\03\\31_01.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "Muy bien, jura que no le va a pasar nada a Katie.",
+                "fr-FR": "Bon, faites la promesse que rien n'arrivera à Katie."
+              },
+              "ID": 31
+            },
+            {
+              "OutgoingLinks": [],
+              "ConversationID": 3,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "OK come back when yo...",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "2",
+                "Conversant": "1",
+                "Menu Text": "",
+                "Dialogue Text": "Just do your job quickly and quietly and you should have nothing to worry about.",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\03\\32_01.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "Simplemente haz tu trabajo de forma rápida y silenciosa y no deberías tener nada de qué preocuparte.",
+                "fr-FR": "Il suffit de faire votre travail rapidement et silencieusement et vous n'aurez pas à vous inquiéter."
+              },
+              "ID": 32
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 3,
+                  "DestinationConvoID": 3,
+                  "OriginDialogID": 33,
+                  "DestinationDialogID": 34
+                },
+                {
+                  "Filename": null,
+                  "OriginConvoID": 3,
+                  "DestinationConvoID": 3,
+                  "OriginDialogID": 33,
+                  "DestinationDialogID": 37
+                }
+              ],
+              "ConversationID": 3,
+              "IsRoot": false,
+              "IsGroup": true,
+              "ConditionsString": "Variable[\"CompletedMission\"] == true",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 1,
+              "Fields": {
+                "Title": "Has The Files",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "2"
+              },
+              "ID": 33
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 3,
+                  "DestinationConvoID": 3,
+                  "OriginDialogID": 34,
+                  "DestinationDialogID": 38
+                },
+                {
+                  "Filename": null,
+                  "OriginConvoID": 3,
+                  "DestinationConvoID": 3,
+                  "OriginDialogID": 34,
+                  "DestinationDialogID": 39
+                }
+              ],
+              "ConversationID": 3,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Here are your stupid...",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "2",
+                "Menu Text": "Pissed",
+                "Dialogue Text": "[em4]Throws the thumb drive on his desk.[/em4] | Where's my sister?",
+                "Parenthetical": "",
+                "Audio Files": "[;AudioFiles\\03\\34_02.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "[em4]Tira el dispositivo de memoria en el escritorio.[/em4] | ¿Dónde está mi hermana?",
+                "fr-FR": "[em4]Lance la clé USB sur son bureau.[/em4] | Où est ma sœur ?"
+              },
+              "ID": 34
+            },
+            {
+              "OutgoingLinks": [],
+              "ConversationID": 3,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "Dialog[32].SimStatus == \"WasDisplayed\"",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 2,
+              "Fields": {
+                "Title": "I said come back whe...",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "2",
+                "Conversant": "1",
+                "Menu Text": "",
+                "Dialogue Text": "Don't ever walk through my door empty-handed.",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\03\\35_01.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "No vuelvas a pasar por mi puerta con las manos vacías.",
+                "fr-FR": "Ne passez jamais ma porte les mains vides."
+              },
+              "ID": 35
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 3,
+                  "DestinationConvoID": 3,
+                  "OriginDialogID": 36,
+                  "DestinationDialogID": 8
+                }
+              ],
+              "ConversationID": 3,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Let's just say ",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "2",
+                "Conversant": "1",
+                "Menu Text": "",
+                "Dialogue Text": "Um, hello? You have a graduate degree from MIT.",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\03\\36_01.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "Um, ¿hola? Tienes un título del MIT.",
+                "fr-FR": "Euh, bonjour ? Vous avez un diplôme d'études supérieures du MIT."
+              },
+              "ID": 36
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 3,
+                  "DestinationConvoID": 3,
+                  "OriginDialogID": 37,
+                  "DestinationDialogID": 40
+                }
+              ],
+              "ConversationID": 3,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "2",
+                "Menu Text": "Worried",
+                "Dialogue Text": "Alright. I've done everything you asked. I have all the information. Now please, please let her go.",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\03\\37_01.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "Muy bien. He hecho todo lo que me pediste. Tengo todos los datos. Ahora, por favor, suéltala.",
+                "fr-FR": "Très bien. J'ai fait tout ce que vous avez demandé. J'ai toutes les informations. Maintenant s'il vous plaît, s'il vous plaît laissez-la partir."
+              },
+              "ID": 37
+            },
+            {
+              "OutgoingLinks": [],
+              "ConversationID": 3,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Watch your mouth!",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "2",
+                "Conversant": "1",
+                "Menu Text": "",
+                "Dialogue Text": "You better watch that mouth of yours. | Lucky for you, you did what I asked. | [em4]Kaite is released.[/em4]",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\03\\38_01.mp3;AudioFiles\\03\\38_02.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "Será mejor que midas tus palabras. | Por suerte para ti, hiciste lo que te pedí. | [em4]Katie es liberada.[/em4]",
+                "fr-FR": "Vous feriez mieux de surveiller votre langage. | Heureusement pour vous, vous avez fait ce que j'ai demandé. | [em4]Katie est libérée.[/em4]"
+              },
+              "ID": 38
+            },
+            {
+              "OutgoingLinks": [],
+              "ConversationID": 3,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "GetRelationship(Actor[\"Tommy\"], Actor[\"Karen\"], \"anger\") == 1",
+              "UserScript": "Actor[\"Karen\"].Status = \"dead\"",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 2,
+              "Fields": {
+                "Title": "I told you to watch ...",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "2",
+                "Conversant": "1",
+                "Menu Text": "",
+                "Dialogue Text": "Didn't I tell you to watch that mouth of yours? | Nobody disrespects Tommy Wong! | [em4]Shoots Karen[/em4]",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\03\\39_01.mp3;AudioFiles\\03\\39_02.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "¿No te dije que midieses tus palabras? | ¡Nadie le falta el respeto a Tommy Wong! | [em4]Dispara a Karen.[/em4]",
+                "fr-FR": "Ne vous ai-je pas dit de surveiller votre langage ? | Personne ne manque de respect à Tommy Wong ! | [em4]Tire sur Karen[/em4]"
+              },
+              "ID": 39
+            },
+            {
+              "OutgoingLinks": [],
+              "ConversationID": 3,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Well, I may not be a...",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "2",
+                "Conversant": "1",
+                "Menu Text": "",
+                "Dialogue Text": "Well, I may not be a good man, but I'm a man of my word. | [em4]Katie is released.[/em4]",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\03\\40_01.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "Bueno, puede que no sea un buen hombre, pero soy un hombre de palabra. | [em4]Katie es liberada.[/em4]",
+                "fr-FR": "Eh bien, je ne suis peut-être pas un homme bon, mais je suis un homme de parole. | [em4]Katie est libérée.[/em4]"
+              },
+              "ID": 40
+            }
+          ],
+          "NodeColor": 0,
+          "Fields": {
+            "Title": "888 Brannen - Tommy's Office",
+            "Pictures": "[]",
+            "Description": "Now that Karen has spoken to the receptionist, she knows which office is Tommy's. The main goal of this conversation is to learn about the mission that Karen has to do for Tommy in order to get her sister back. There are some important decisions that can be made here as well.",
+            "Actor": "1",
+            "Conversant": "2",
+            "Scene": "2B"
+          },
+          "ID": 3
+        },
+        {
+          "DialogNodes": [
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 0,
+                  "DestinationDialogID": 1
+                }
+              ],
+              "ConversationID": 4,
+              "IsRoot": true,
+              "IsGroup": false,
+              "ConditionsString": "Location[\"445_Oakridge\"].Learned == true\r\nand Variable[\"CompletedMission\"] == false",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "START",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "5"
+              },
+              "ID": 0
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 1,
+                  "DestinationDialogID": 2
+                },
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 1,
+                  "DestinationDialogID": 3
+                },
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 1,
+                  "DestinationDialogID": 4
+                },
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 1,
+                  "DestinationDialogID": 5
+                }
+              ],
+              "ConversationID": 4,
+              "IsRoot": false,
+              "IsGroup": true,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 6,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Entry Decision",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "5"
+              },
+              "ID": 1
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 2,
+                  "DestinationDialogID": 1
+                }
+              ],
+              "ConversationID": 4,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "Dialog[2].SimStatus ~= \"WasDisplayed\"",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Front Door",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "1",
+                "Menu Text": "[a][f]Check Front Door",
+                "Dialogue Text": "Someone will see me.",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\04\\02_01.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "Alguien me va a ver.",
+                "fr-FR": "Quelqu'un va me voir."
+              },
+              "ID": 2
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 3,
+                  "DestinationDialogID": 1
+                }
+              ],
+              "ConversationID": 4,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "Dialog[3].SimStatus ~= \"WasDisplayed\"",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Window",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "1",
+                "Menu Text": "[a][f]Check Window",
+                "Dialogue Text": "It's locked... Someone will hear me if I try to break it.",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\04\\03_01.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "Está cerrada... Me van a oír si intento romperla.",
+                "fr-FR": "C'est verrouillé... Quelqu'un va m'entendre si j'essaie de la casser."
+              },
+              "ID": 3
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 4,
+                  "DestinationDialogID": 6
+                }
+              ],
+              "ConversationID": 4,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Check Cellar Door",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "1",
+                "Menu Text": "[a][f]Check Cellar Door",
+                "Dialogue Text": "It's open! | You'd think a police officer would keep his doors locked! | [em4]Enters door[/em4]",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\04\\04_01.mp3;AudioFiles\\04\\04_02.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "¡Está abierta! | ¡Quién iba a pensar que un oficial de policía no iba a cerrar con llave todas las puertas! | [em4]Entra por la puerta.[/em4]",
+                "fr-FR": "C'est ouvert ! | On pourrait penser qu'un agent de police garde ses portes fermées à clé ! | [em4]Entre par la porte[/em4]"
+              },
+              "ID": 4
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 5,
+                  "DestinationDialogID": 1
+                }
+              ],
+              "ConversationID": 4,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "Dialog[5].SimStatus ~= \"WasDisplayed\"",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Back Door",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "1",
+                "Menu Text": "[a][f]Check Back Door",
+                "Dialogue Text": "It's bolted shut.",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\04\\05_01.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "Está atornillada.",
+                "fr-FR": "C'est verrouillé."
+              },
+              "ID": 5
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 6,
+                  "DestinationDialogID": 7
+                },
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 6,
+                  "DestinationDialogID": 8
+                },
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 6,
+                  "DestinationDialogID": 9
+                }
+              ],
+              "ConversationID": 4,
+              "IsRoot": false,
+              "IsGroup": true,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 7,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Floor Search",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "1"
+              },
+              "ID": 6
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 7,
+                  "DestinationDialogID": 6
+                }
+              ],
+              "ConversationID": 4,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "Dialog[7].SimStatus ~= \"WasDisplayed\"",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "First Floor",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "1",
+                "Menu Text": "[a][f]Search First Floor",
+                "Dialogue Text": "There's a kitchen, a living room, a dining room, and a family room... | but no computer.",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\04\\07_01.mp3;AudioFiles\\04\\07_02.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "Hay una cocina, una sala de estar, un comedor y una salita... | Pero no veo ningún ordenado",
+                "fr-FR": "Il y a une cuisine, une salle de séjour, une salle à manger, et une pièce familiale... | Mais pas d'ordinateur."
+              },
+              "ID": 7
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 8,
+                  "DestinationDialogID": 10
+                }
+              ],
+              "ConversationID": 4,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Second Floor",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "1",
+                "Menu Text": "[a][f]Search Second Floor",
+                "Dialogue Text": "There are two bedrooms and... a home office! | [em4]Walks into the office[/em4] | Wow what a baseball nut! | It's like the hall of fame in here. | It looks like he's especially into Babe Ruth. | There's also an anniversary card here from his wife. |  Oh, here's the computer!",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\04\\08_01.mp3;;AudioFiles\\04\\08_03.mp3;AudioFiles\\04\\08_04.mp3;AudioFiles\\04\\08_05.mp3;AudioFiles\\04\\08_06.mp3;AudioFiles\\04\\08_07.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "Hay dos dormitorios y... ¡una oficina! | [em4]Entra en la oficina.[/em4] | ¡Qué fanático del béisbol! | Esto parece el salón de la fama. | Parece que le gusta en concreto Babe Ruth. | Hay también una tarjeta de aniversario aquí de su esposa. | Ah, ¡aquí está el ordenador!",
+                "fr-FR": "Il y a deux chambres et... un bureau ! | [em4]Traverse le bureau[/em4] | Wow, quel fana de base-ball ! | C'est comme le Hall of Fame ici. | On dirait qu'il l'est particulièrement de Babe Ruth. | Il y a aussi ici une carte d'anniversaire de sa femme. | Oh, voici l'ordinateur !"
+              },
+              "ID": 8
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 9,
+                  "DestinationDialogID": 6
+                }
+              ],
+              "ConversationID": 4,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "Dialog[9].SimStatus ~= \"WasDisplayed\"",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Third Floor",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "1",
+                "Menu Text": "[a][f]Search Third Floor",
+                "Dialogue Text": "It's just a dusty old attic.",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\04\\09_01.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "Es sólo un viejo desván polvoriento.",
+                "fr-FR": "C'est juste un vieux grenier poussiéreux."
+              },
+              "ID": 9
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 10,
+                  "DestinationDialogID": 11
+                }
+              ],
+              "ConversationID": 4,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Enter password",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "5",
+                "Conversant": "1",
+                "Menu Text": "",
+                "Dialogue Text": "Enter Password:",
+                "Parenthetical": "",
+                "Audio Files": "[]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "Introduzca la contraseña:",
+                "fr-FR": "Entrez Mot de passe :"
+              },
+              "ID": 10
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 11,
+                  "DestinationDialogID": 12
+                }
+              ],
+              "ConversationID": 4,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Oh shoot... I don't ...",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "5",
+                "Menu Text": "",
+                "Dialogue Text": "Shoot! I don't know...",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\04\\11_01.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "¡Vaya! No sé…",
+                "fr-FR": "Tirer ! Je ne sais pas…"
+              },
+              "ID": 11
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 12,
+                  "DestinationDialogID": 13
+                },
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 12,
+                  "DestinationDialogID": 14
+                },
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 12,
+                  "DestinationDialogID": 15
+                },
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 12,
+                  "DestinationDialogID": 16
+                },
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 12,
+                  "DestinationDialogID": 18
+                },
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 12,
+                  "DestinationDialogID": 17
+                },
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 12,
+                  "DestinationDialogID": 25
+                }
+              ],
+              "ConversationID": 4,
+              "IsRoot": false,
+              "IsGroup": true,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 2,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Password Options",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "5",
+                "Conversant": "1"
+              },
+              "ID": 12
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 13,
+                  "DestinationDialogID": 21
+                }
+              ],
+              "ConversationID": 4,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "Dialog[13].SimStatus ~= \"WasDisplayed\"",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Dodgers",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "5",
+                "Menu Text": "[f]Dodgers",
+                "Dialogue Text": "Well he's obviously into baseball, so... | [em4]Types D-O-D-G-E-R-S[/em4]",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\04\\13_01.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "Bueno, evidentemente le gusta el béisbol, así que... | [em4]Escribe D-O-D-G-E-R-S[/em4]",
+                "fr-FR": "Eh bien, il est fan de baseball, alors... | [em4]Écrit D-O-D-G-E-R-S[/em4]"
+              },
+              "ID": 13
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 14,
+                  "DestinationDialogID": 21
+                }
+              ],
+              "ConversationID": 4,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "Dialog[14].SimStatus ~= \"WasDisplayed\"",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Elizabeth",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "5",
+                "Menu Text": "[f]Elizabeth",
+                "Dialogue Text": "Well according to this anniversary card on his desk, his wife's name is... | [em4]Types E-L-I-Z-A-B-E-T-H[/em4]",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\04\\14_01.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "Bueno, según esta tarjeta de aniversario sobre la mesa, el nombre de su esposa es... | [em4]Escribe E-L-I-Z-A-B-E-T-H [/em4]",
+                "fr-FR": "Eh bien, selon cette carte d'anniversaire sur son bureau, le nom de sa femme est... | [em4]Écrit E-L-I-Z-A-B-E-T-H[/em4]"
+              },
+              "ID": 14
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 15,
+                  "DestinationDialogID": 21
+                }
+              ],
+              "ConversationID": 4,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "Dialog[15].SimStatus ~= \"WasDisplayed\"",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Cracker Jacks",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "5",
+                "Menu Text": "[f]Cracker Jacks",
+                "Dialogue Text": "Buy me some peanuts and... | [em4]Types C-R-A-C-K-E-R-J-A-C-K-S[/em4]",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\04\\15_01.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "Cómprame cacahuates y... | [em4]Escribe C-R-A-C-K-E-R-J-A-C-K-S [/em4]",
+                "fr-FR": "Achète-moi des arachides et... | [em4]Écrit C-R-A-C-K-E-R-J-A-C-K-S [/em4]"
+              },
+              "ID": 15
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 16,
+                  "DestinationDialogID": 12
+                }
+              ],
+              "ConversationID": 4,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "Dialog[16].SimStatus ~= \"WasDisplayed\"",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Venetti",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "5",
+                "Menu Text": "[f]Venetti",
+                "Dialogue Text": "Nevermind... why would he do that? Think, Karen, think!",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\04\\16_01.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "Olvídalo... ¿por qué iba a hacer eso? ¡Piensa, Karen, piensa!",
+                "fr-FR": "Passons... Pourquoi ferait-il cela ? Pense, Karen, pense !"
+              },
+              "ID": 16
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 17,
+                  "DestinationDialogID": 21
+                }
+              ],
+              "ConversationID": 4,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "Dialog[17].SimStatus ~= \"WasDisplayed\"",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "White Sox",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "5",
+                "Menu Text": "[f]White Sox",
+                "Dialogue Text": "Who did Babe Ruth play for again? | [em4]Types W-H-I-T-E-S-O-X[/em4]",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\04\\17_01.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "¿Dónde jugó Babe Ruth? | [em4]Escribe W-H-I-T-E-S-O-X[/em4]",
+                "fr-FR": "Pour qui Babe Ruth a-t-il joué à nouveau ? | [em4]Écrit W-H-I-T-E-S-O-X[/em4]"
+              },
+              "ID": 17
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 18,
+                  "DestinationDialogID": 24
+                }
+              ],
+              "ConversationID": 4,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Yankees",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "5",
+                "Menu Text": "[f]Yakees",
+                "Dialogue Text": "Well he is into Babe Ruth... | [em4]Types Y-A-N-K-E-E-S[/em4]",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\04\\18_01.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "Bueno, si le gusta Babe Ruth... | [em4]Escribe Y-A-N-K-E-E-S[/em4]",
+                "fr-FR": "Eh bien, il est fan de Babe Ruth... | [em4]Écrit Y-A-N-K-E-E-S[/em4]"
+              },
+              "ID": 18
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 21,
+                  "DestinationDialogID": 12
+                }
+              ],
+              "ConversationID": 4,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "",
+              "UserScript": "Variable[\"PasswordAttempts\"] = Variable[\"PasswordAttempts\"] + 1",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "PASSWORD DENIED!",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "5",
+                "Conversant": "1",
+                "Menu Text": "",
+                "Dialogue Text": "PASSWORD DENIED!",
+                "Parenthetical": "",
+                "Audio Files": "[]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "¡CONTRASEÑA INCORRECTA!",
+                "fr-FR": "MOT DE PASSE REFUSÉ !"
+              },
+              "ID": 21
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 24,
+                  "DestinationDialogID": 26
+                }
+              ],
+              "ConversationID": 4,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "PASSWORD DENIED!",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "5",
+                "Conversant": "1",
+                "Menu Text": "",
+                "Dialogue Text": "PASSWORD ACCEPTED!",
+                "Parenthetical": "",
+                "Audio Files": "[]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "¡CONTRASEÑA ACEPTADA!",
+                "fr-FR": "Mot de passe accepté !"
+              },
+              "ID": 24
+            },
+            {
+              "OutgoingLinks": [],
+              "ConversationID": 4,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "Variable[\"PasswordAttempts\"] == 3",
+              "UserScript": "Actor[\"Karen\"].Status = \"dead\"",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 2,
+              "Fields": {
+                "Title": "Hey! What the heck a...",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "6",
+                "Conversant": "1",
+                "Menu Text": "",
+                "Dialogue Text": "[em4]Vinetti walks into the office[/em4] | I thought Tommy would send someone. | [em4]Shoots Karen[/em4]",
+                "Parenthetical": "",
+                "Audio Files": "[;AudioFiles\\04\\25_02.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "[em4]Vinetti entra en la oficina.[/em4] | Pensé que Tommy enviaría a alguien. | [em4]Dispara a Karen.[/em4]",
+                "fr-FR": "[em4]Vinetti entre dans le bureau[/em4] | Je pensais que Tommy allait envoyer quelqu'un. | [em4]Tire sur Karen[/em4]"
+              },
+              "ID": 25
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 26,
+                  "DestinationDialogID": 28
+                },
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 26,
+                  "DestinationDialogID": 27
+                },
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 26,
+                  "DestinationDialogID": 29
+                }
+              ],
+              "ConversationID": 4,
+              "IsRoot": false,
+              "IsGroup": true,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 3,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Folder Options",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "5",
+                "Conversant": "1"
+              },
+              "ID": 26
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 27,
+                  "DestinationDialogID": 31
+                }
+              ],
+              "ConversationID": 4,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "My Documents",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "5",
+                "Conversant": "1",
+                "Menu Text": "[f]C:\\Users\\Venetti\\Documents",
+                "Dialogue Text": "",
+                "Parenthetical": "",
+                "Audio Files": "[]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "",
+                "fr-FR": ""
+              },
+              "ID": 27
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 28,
+                  "DestinationDialogID": 30
+                }
+              ],
+              "ConversationID": 4,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "Dialog[28].SimStatus ~= \"WasDisplayed\"",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Program Files",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "5",
+                "Conversant": "1",
+                "Menu Text": "[f]C:\\Program Files",
+                "Dialogue Text": "",
+                "Parenthetical": "",
+                "Audio Files": "[]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "",
+                "fr-FR": ""
+              },
+              "ID": 28
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 29,
+                  "DestinationDialogID": 42
+                }
+              ],
+              "ConversationID": 4,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "Dialog[29].SimStatus ~= \"WasDisplayed\"",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Windows",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "5",
+                "Conversant": "1",
+                "Menu Text": "[f]C:\\Windows",
+                "Dialogue Text": "",
+                "Parenthetical": "",
+                "Audio Files": "[]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "",
+                "fr-FR": ""
+              },
+              "ID": 29
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 30,
+                  "DestinationDialogID": 26
+                }
+              ],
+              "ConversationID": 4,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Nah, he's probably n...",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "5",
+                "Menu Text": "",
+                "Dialogue Text": "Just as I thought... he wasn't smart enough to hide the files here.",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\04\\30_01.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "Justo lo que pensaba... no es tan inteligente como para ocultar los archivos aquí.",
+                "fr-FR": "Juste comme je le pensais... il n'était pas assez intelligent pour cacher les fichiers ici."
+              },
+              "ID": 30
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 31,
+                  "DestinationDialogID": 32
+                },
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 31,
+                  "DestinationDialogID": 33
+                },
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 31,
+                  "DestinationDialogID": 34
+                }
+              ],
+              "ConversationID": 4,
+              "IsRoot": false,
+              "IsGroup": true,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 4,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "File Options",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "5",
+                "Conversant": "1"
+              },
+              "ID": 31
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 32,
+                  "DestinationDialogID": 36
+                }
+              ],
+              "ConversationID": 4,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Birthday Photos",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "5",
+                "Conversant": "1",
+                "Menu Text": "[f]Birthday_Photos.PDF",
+                "Dialogue Text": "",
+                "Parenthetical": "",
+                "Audio Files": "[]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "",
+                "fr-FR": ""
+              },
+              "ID": 32
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 33,
+                  "DestinationDialogID": 35
+                }
+              ],
+              "ConversationID": 4,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "Dialog[33].SimStatus ~= \"WasDisplayed\"",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Super_Secret_Accounts.XLS",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "5",
+                "Conversant": "1",
+                "Menu Text": "[f]Transactions.XLS",
+                "Dialogue Text": "",
+                "Parenthetical": "",
+                "Audio Files": "[]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "",
+                "fr-FR": ""
+              },
+              "ID": 33
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 34,
+                  "DestinationDialogID": 22
+                }
+              ],
+              "ConversationID": 4,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "Dialog[34].SimStatus ~= \"WasDisplayed\"",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Babe_Ruth_Autograph",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "5",
+                "Conversant": "1",
+                "Menu Text": "[f]Babe_Ruth_Autograph.JPG",
+                "Dialogue Text": "",
+                "Parenthetical": "",
+                "Audio Files": "[]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "",
+                "fr-FR": ""
+              },
+              "ID": 34
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 35,
+                  "DestinationDialogID": 31
+                }
+              ],
+              "ConversationID": 4,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "That's not it.",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "5",
+                "Menu Text": "",
+                "Dialogue Text": "This look like it's a log of his mortgage payments. | Man, he owes a lot!",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\04\\35_01.mp3;AudioFiles\\04\\35_02.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "Parece un registro de los pagos de su hipoteca. | ¡Dios! ¡Les debe mucho dinero!",
+                "fr-FR": "On dirait un registre de ses remboursements hypothécaires. | Mon dieu, il en doit beaucoup !"
+              },
+              "ID": 35
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 36,
+                  "DestinationDialogID": 37
+                }
+              ],
+              "ConversationID": 4,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "",
+              "UserScript": "Variable[\"CompletedMission\"] = true",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "This is it! Put the ...",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "5",
+                "Menu Text": "",
+                "Dialogue Text": "Whoa! This doc has everything in it. | Scans of checks from some companies called Imperial Imports, Golden Dragon Goods, and ABC Trading Company. | This guy is working for EVERYONE. | [em4]Loads the file onto her memory stick.[/em4]",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\04\\36_01.mp3;AudioFiles\\04\\36_02.mp3;AudioFiles\\04\\36_03.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "¡Vaya! Este documento contiene todo. | Escaneos de cheques de empresas como Imperial Imports, Golden Dragon Goods o ABC Trading Company. | Este tío está trabajando para TODAS. | [em4]Copia el archivo en su dispositivo de memoria.[/em4]",
+                "fr-FR": "Whoa ! Ce doc a tout ce qu'il faut. | Les scans de chèques de certaines entreprises appelées Imperial Imports, Golden Dragon Goods, et ABC Trading Company. | Ce mec travaille pour TOUT LE MONDE. | [em4]Charge le fichier sur sa carte mémoire.[/em4]"
+              },
+              "ID": 36
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 37,
+                  "DestinationDialogID": 38
+                },
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 37,
+                  "DestinationDialogID": 39
+                },
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 37,
+                  "DestinationDialogID": 40
+                }
+              ],
+              "ConversationID": 4,
+              "IsRoot": false,
+              "IsGroup": true,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 1,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Escape Options",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "5"
+              },
+              "ID": 37
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 38,
+                  "DestinationDialogID": 41
+                }
+              ],
+              "ConversationID": 4,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Front Door",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "1",
+                "Menu Text": "[a][f]Leave Through Front Door",
+                "Dialogue Text": "I better get outta here as fast as I can...",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\04\\38_01.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "Será mejor que me vaya de aquí tan rápido como me sea posible…",
+                "fr-FR": "Je ferais mieux de sortir d'ici aussi vite que je peux…"
+              },
+              "ID": 38
+            },
+            {
+              "OutgoingLinks": [],
+              "ConversationID": 4,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Back Door",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "1",
+                "Menu Text": "[a][f]Leave Through Back Door",
+                "Dialogue Text": "It looks safe enough...",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\04\\39_01.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "Parece bastante seguro…",
+                "fr-FR": "Cela semble assez sûr…"
+              },
+              "ID": 39
+            },
+            {
+              "OutgoingLinks": [],
+              "ConversationID": 4,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Cellar Door",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "1",
+                "Menu Text": "[a][f]Leave Through Cellar Door",
+                "Dialogue Text": "Well, I might as well leave the way I came in...",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\04\\40_01.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "Bueno, podría salir por donde entré…",
+                "fr-FR": "Eh bien, je pourrais tout aussi bien partir par là où je suis entrée…"
+              },
+              "ID": 40
+            },
+            {
+              "OutgoingLinks": [],
+              "ConversationID": 4,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "",
+              "UserScript": "Actor[\"Karen\"].Status = \"dead\"",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Caught ya!!",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "6",
+                "Conversant": "1",
+                "Menu Text": "",
+                "Dialogue Text": "[em4]Vinetti is waiting on the other side of the door.[/em4] | I thought Tommy would send someone... | [em4]Shoots Karen[/em4]",
+                "Parenthetical": "",
+                "Audio Files": "[;AudioFiles\\04\\41_02.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "[em4]Vinetti está esperando al otro lado de la puerta.[/em4] | Pensé que Tommy enviaría a alguien... | [em4]Dispara a Karen.[/em4]",
+                "fr-FR": "[em4]Vinetti attend de l'autre côté de la porte.[/em4] | J'ai pensé que Tommy allait envoyer quelqu'un... | [em4]Tire sur Karen[/em4]"
+              },
+              "ID": 41
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 22,
+                  "DestinationDialogID": 31
+                }
+              ],
+              "ConversationID": 4,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Wow, if he actually ...",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "5",
+                "Menu Text": "",
+                "Dialogue Text": "Wow, if he actually owns this, it's probably worth a bundle.",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\04\\22_01.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "Vaya, si realmente es el dueño de todo esto, habrá valido la pena.",
+                "fr-FR": "Wow, s'il possède réellement ceci, cela vaut sûrement un paquet."
+              },
+              "ID": 22
+            },
+            {
+              "OutgoingLinks": [
+                {
+                  "Filename": null,
+                  "OriginConvoID": 4,
+                  "DestinationConvoID": 4,
+                  "OriginDialogID": 42,
+                  "DestinationDialogID": 26
+                }
+              ],
+              "ConversationID": 4,
+              "IsRoot": false,
+              "IsGroup": false,
+              "ConditionsString": "",
+              "UserScript": "",
+              "NodeColor": 8,
+              "DelaySimStatus": false,
+              "FalseConditionAction": 0,
+              "ConditionPriority": 3,
+              "Fields": {
+                "Title": "Nothing unusual here...",
+                "Pictures": "[]",
+                "Description": "",
+                "Actor": "1",
+                "Conversant": "5",
+                "Menu Text": "",
+                "Dialogue Text": "Nothing unusual here...",
+                "Parenthetical": "",
+                "Audio Files": "[AudioFiles\\04\\42_01.mp3]",
+                "Video File": "",
+                "Animation Files": "[]",
+                "es-ES": "Nada raro por aquí…",
+                "fr-FR": "Rien d'inhabituel ici…"
+              },
+              "ID": 42
+            }
+          ],
+          "NodeColor": 0,
+          "Fields": {
+            "Title": "Venetti's House",
+            "Pictures": "[]",
+            "Description": "This is where Karen can complete the mission for Tommy. There are two ways for Karen to die in this conversation.",
+            "Actor": "1",
+            "Conversant": "5",
+            "Scene": "3A"
+          },
+          "ID": 4
+        }
+      ],
+      "UserVariables": [
+        {
+          "Fields": {
+            "Name": "CompletedMission",
+            "Initial Value": "false",
+            "Description": ""
+          },
+          "ID": 0
+        },
+        {
+          "Fields": {
+            "Name": "PasswordAttempts",
+            "Initial Value": "0",
+            "Description": ""
+          },
+          "ID": 1
+        }
+      ]
+    }
+  }
