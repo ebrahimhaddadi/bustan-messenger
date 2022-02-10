@@ -2,21 +2,21 @@ import { View, Text,TouchableOpacity,Image, StyleSheet, FlatList, TextInput} fro
 import React from 'react';
 import { MaterialCommunityIcons,Ionicons } from "@expo/vector-icons";
 import Line from '../components/Line/Line';
-import fakeApi from "../server/fakeApi.json"
+import fakeApi from "../api/fakeApi.json"
 
 const Home = ({navigation}) => {
     
 const renderItem=({item})=>{
   return(
-      <View key={item.postid}>
-          <TouchableOpacity style={styles.btn} onPress={()=>navigation.navigate("Details")}>
-<Image
-source={{uri:item.imagelink}}
-name='person'
-size={30}
-color="dodgerblue"
-style={styles.image}
-/>
+  <View key={item.postid}>
+  <TouchableOpacity style={styles.btn} onPress={()=>navigation.navigate("Details")}>
+   <Image
+   source={{uri:item.imagelink}}
+   name='person'
+   size={30}
+   color="dodgerblue"
+   style={styles.image}
+  />
 <Text>کانال نمونه </Text>
 </TouchableOpacity>
 <Line height={2}  width={"100%"} bg="#fff" style={{marginTop:15}} />
