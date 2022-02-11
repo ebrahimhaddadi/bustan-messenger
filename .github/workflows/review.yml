@@ -1,0 +1,56 @@
+name: review
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    types: [opened, synchronize]
+
+concurrency:
+  group: review-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        node: [16.x]
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🏗 Setup repo
+        uses: actions/checkout@v2
+
+      - name: 🏗 Setup Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node }}
+          cache: yarn
+
+      - name: 📦 Install dependencies
+        run: yarn install --frozen-lockfile --check-files
+
+      - name: ✅ Lint code
+        run: yarn lint
+
+      - name: 🧪 Test code
+        run: yarn test
+
+      - name: 👷 Build code
+        run: yarn clean && yarn build
+
+      - name: 🕵️ Validate build
+        id: diff
+        run: |
+          if [ "$(git diff --ignore-space-at-eol build/ | wc -l)" -gt "0" ]; then
+            echo "⚠️ Build is outdated"
+            echo "    > run 'yarn clean', 'yarn build', and commit changes"
+            git diff
+            exit 1
+          fi
+      
+      - name: 🗂 Upload build
+        uses: actions/upload-artifact@v2
+        if: ${{ failure() && steps.diff.conclusion == 'failure' }}
+        with:
+          name: build
+          path: build/
