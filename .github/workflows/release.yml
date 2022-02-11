@@ -37,4 +37,8 @@ jobs:
         if: ${{ github.ref == 'refs/heads/main' && github.event.inputs.release == 'release' }}
         run: yarn semantic-release
         env:
+<<<<<<< HEAD
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+=======
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+>>>>>>> ae4c432406c15a2c8988f065de85984844842655
