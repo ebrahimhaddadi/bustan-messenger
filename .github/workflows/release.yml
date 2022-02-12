@@ -23,7 +23,7 @@ jobs:
         with:
           node-version: 16.x
           cache: yarn
-      - run: cp / "source/"*/bustan-messenger/yarn.lock .
+      - run: cp /source/*/bustan-messenger/yarn.lock .
       - name: 📦 Install dependencies
         run: yarn install --frozen-lockfile --check-files
 
