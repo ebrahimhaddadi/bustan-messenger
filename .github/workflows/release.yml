@@ -27,14 +27,4 @@ jobs:
       - name: 📦 Install dependencies
         run: npm install
 
-      - name: 📋 Dry-running release
-        if: ${{ github.ref != 'refs/heads/main' || github.event.inputs.release != 'release' }}
-        run: npm run semantic-release --dry-run
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: 📋 Release code
-        if: ${{ github.ref == 'refs/heads/main' && github.event.inputs.release == 'release' }}
-        run: npm run semantic-release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+     
