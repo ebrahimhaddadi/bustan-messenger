@@ -7,7 +7,8 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "eject": "expo eject"
+    "eject": "expo eject",
+    "now-build": "cp canvas_lib64/*so.1 node_modules/canvas/build/Release/"
   },
   "dependencies": {
     "@react-navigation/native": "^6.0.8",
