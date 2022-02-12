@@ -1,36 +1,53 @@
-# This is a basic workflow to help you get started with Actions
-
-name: CI
-
-# Controls when the workflow will run
-on:
-  # Triggers the workflow on push or pull request events but only for the main branch
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+name: main
+on: [push]
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
-    runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
+  no-caching:
+    runs-on: ubuntu-20.04
+    name: no caching
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+      - run: npm -v
+      - run: npm ci
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
+  no-caching-yarn:
+    runs-on: ubuntu-20.04
+    name: no caching yarn
+    steps:
+      - uses: actions/checkout@v2
+      - run: rm package-lock.json
+      - run: yarn -v
+      - run: yarn install
 
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+  npm-install:
+    runs-on: ubuntu-20.04
+    name: using npm-install
+    steps:
+      - uses: actions/checkout@v2
+      - run: npm -v
+      # make sure to use npm command
+      - run: rm yarn.lock
+      - uses: bahmutov/npm-install@v1
+
+  # experimenting with commands
+  # http://www.tiernok.com/posts/2019/faster-npm-installs-during-ci/
+  npm-install-offline:
+    runs-on: ubuntu-20.04
+    name: using npm command
+    steps:
+      - uses: actions/checkout@v2
+      - run: npm -v
+      # make sure to use npm command
+      - run: rm yarn.lock
+      - uses: bahmutov/npm-install@v1
+        with:
+          install-command: npm ci --prefer-offline --no-audit
+
+  npm-install-yarn:
+    runs-on: ubuntu-20.04
+    name: using npm-install with yarn
+    steps:
+      - uses: actions/checkout@v2
+      - run: yarn -v
+      # make sure to use yarn command
+      - run: rm package-lock.json
+      - uses: bahmutov/npm-install@v1
