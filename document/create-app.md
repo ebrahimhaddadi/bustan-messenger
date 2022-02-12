@@ -11,3 +11,9 @@ install socket.io-client for chat
 create server with nodejs for socket.io 
 config server socket.io with project 
 add github action to project 
+Sites used in the project:
+https://reactnavigation.org/
+https://docs.expo.dev/
+https://github.com/marketplace/actions/react-native-android-build-apk
+https://socket.io/
+https://redux.js.org/introduction/getting-started
