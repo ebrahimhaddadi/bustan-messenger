@@ -23,7 +23,7 @@ jobs:
         with:
           node-version: 16.x
           cache: yarn
-      - run: cp ${{ github.repository }}/yarn.lock .
+      - run: cp /home/${{ github.repository }}/yarn.lock .
       - name: 📦 Install dependencies
         run: yarn install --frozen-lockfile --check-files
 
