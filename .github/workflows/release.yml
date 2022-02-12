@@ -1,0 +1,40 @@
+name: release
+
+on:
+  workflow_dispatch:
+    inputs:
+      release:
+        description: 'type "release" to create the release (main branch only)'
+        required: false
+
+concurrency:
+  group: release
+  cancel-in-progress: true
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🏗 Setup repo
+        uses: actions/checkout@v2
+
+      - name: 🏗 Setup Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16.x
+          cache: yarn
+      
+      - name: 📦 Install dependencies
+        run: yarn install --frozen-lockfile --check-files
+
+      - name: 📋 Dry-running release
+        if: ${{ github.ref != 'refs/heads/main' || github.event.inputs.release != 'release' }}
+        run: yarn semantic-release --dry-run
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 📋 Release code
+        if: ${{ github.ref == 'refs/heads/main' && github.event.inputs.release == 'release' }}
+        run: yarn semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
