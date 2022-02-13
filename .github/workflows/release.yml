@@ -17,7 +17,8 @@ jobs:
     steps:
       - name: 🏗 Setup repo
         uses: actions/checkout@v2
-
+      - name: build Android Release
+        run: cd android && ./gradlew assembleRelease
       - name: 🏗 Setup Node
         uses: actions/setup-node@v2
         with:
