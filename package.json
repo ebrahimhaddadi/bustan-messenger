@@ -44,9 +44,9 @@
     "@types/redux-thunk": "^2.1.0"
   },
   "private": true,
-  {
+  
   "release": {
     "branches": ["main", "release"]
   }
-}
+
 }
