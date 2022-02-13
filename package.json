@@ -43,5 +43,10 @@
     "@types/redux": "^3.6.0",
     "@types/redux-thunk": "^2.1.0"
   },
-  "private": true
+  "private": true,
+  {
+  "release": {
+    "branches": ["master", "next"]
+  }
+}
 }
