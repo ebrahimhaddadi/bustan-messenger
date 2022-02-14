@@ -39,9 +39,12 @@
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
+    "@react-native-community/eslint-config": "^3.0.1",
     "@types/react-redux": "^7.1.22",
     "@types/redux": "^3.6.0",
-    "@types/redux-thunk": "^2.1.0"
+    "@types/redux-thunk": "^2.1.0",
+    "eslint": "^8.9.0",
+    "prettier": "^2.5.1"
   },
   "private": true
 }
