@@ -46,5 +46,10 @@
     "eslint": "^8.9.0",
     "prettier": "^2.5.1"
   },
-  "private": true
+  "private": true,
+  
+  "release": {
+    "branches": ["main", "release"]
+  }
+
 }
